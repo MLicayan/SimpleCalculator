@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SimpCalculator</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="index.js"></script>
+	</head>
+
+<body>
+	<h1 style="text-align: center;">SimpCalculator</h1>
+	<div class="container">
+		<form name="myForm">
+			<div class="display">
+				<input type="text" placeholder="0" name="displayResult" />
+			</div>
+			<div class="delete">
+				<input type="reset" name="relBtn" value="CLEAR" onClick="del()">
+			</div>
+			<div class="buttons">
+				<div class="row">
+					<input type="button" name="btn7" value="7" onClick="calcNumbers(btn7.value)">
+  					<input type="button" name="btn8" value="8" onClick="calcNumbers(btn8.value)">
+					<input type="button" name="btn9" value="9" onClick="calcNumbers(btn9.value)">
+					<input type="button" name="addBtn" value="+" onClick="calcNumbers(addBtn.value)">
+				</div>
+				<div class="row">
+					<input type="button" name="btn6" value="6" onClick="calcNumbers(btn6.value)">
+  					<input type="button" name="btn5" value="5" onClick="calcNumbers(btn5.value)">
+					<input type="button" name="btn4" value="4" onClick="calcNumbers(btn4.value)">
+					<input type="button" name="subBtn" value="-" onClick="calcNumbers(subBtn.value)">
+				</div>
+				<div class="row">
+					<input type="button" name="btn3" value="3" onClick="calcNumbers(btn3.value)">
+  					<input type="button" name="btn2" value="2" onClick="calcNumbers(btn2.value)">
+					<input type="button" name="btn1" value="1" onClick="calcNumbers(btn1.value)">
+					<input type="button" name="multBtn" value="*" onClick="calcNumbers(multBtn.value)">
+				</div>
+				<div class="row">
+					<input type="button" name="btn0" value="0" onClick="calcNumbers(btn0.value)">
+  					<input type="button" name="dotBtn" value="." onClick="calcNumbers(dotBtn.value)">
+					<input type="button" name="divBtn" value="/" onClick="calcNumbers(divBtn.value)">
+					<input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
